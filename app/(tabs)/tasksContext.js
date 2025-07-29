@@ -1,2 +1,2 @@
 import React from 'react';
-export const tasksContext = React.createContext(); 
+export const tasksContext = React.createContext();

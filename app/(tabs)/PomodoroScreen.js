@@ -14,7 +14,6 @@ import {
   View
 } from 'react-native';
 import Svg, { Circle, G, Line } from 'react-native-svg';
-import { tasksContext } from './tasksContext';
 
 export default function PomodoroScreen() {
   // Timer settings state
@@ -43,7 +42,6 @@ export default function PomodoroScreen() {
   const animationRef = useRef(null);
   const animationStart = useRef(null);
   const lastSecond = useRef(currentTime);
-  const { tasks = [] } = React.useContext(tasksContext) || {};
   const [selectedTitle, setSelectedTitle] = useState('Work Time');
 
   // Load default settings on app start
